@@ -41,13 +41,13 @@
         </ul>
 
         <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2">Login</button>
-            <button type="button" class="btn btn-primary">Sign-up</button>
+            <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='/login'">Login</button>
+            <button type="button" class="btn btn-primary" onclick="location.href='/member_join'">Sign-up</button>
         </div>
     </header>
 </div>
 
-<div class="container text-center" style="margin-top: 100px">
+<div class="container text-center" style="width:90%; margin-top: 100px">
 
     <hr width="100%" color="black" noshade/>
 
@@ -58,8 +58,8 @@
         <div class="col-2">
             성명
         </div>
-        <div class="col-1">
-            성별
+        <div class="col-3">
+            주소
         </div>
         <div class="col-2">
             전화번호
