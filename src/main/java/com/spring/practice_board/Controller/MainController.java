@@ -8,33 +8,28 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MainController {
 
     @RequestMapping("/")
-    public String root() throws Exception{
+    public String root() throws Exception {
         return "redirect:/home";
     }
 
     @GetMapping("/home")
-    public String Home(){
+    public String Home() {
         return "/WEB-INF/views/home.jsp";
     }
 
     @GetMapping("/board")
-    public String Board(){
+    public String Board() {
         return "/WEB-INF/views/board.jsp";
     }
 
     @GetMapping("/member_list")
-    public String Member(){
+    public String Member() {
         return "/WEB-INF/views/member_list.jsp";
     }
 
     @GetMapping("/about")
-    public String About(){
+    public String About() {
         return "/WEB-INF/views/about.jsp";
-    }
-
-    @GetMapping("/login")
-    public String Login(){
-        return "/WEB-INF/views/login.jsp";
     }
 
 }
