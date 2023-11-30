@@ -14,22 +14,22 @@ public class MainController {
 
     @GetMapping("/home")
     public String Home() {
-        return "/WEB-INF/views/home.jsp";
+        return "/WEB-INF/views/Page/home.jsp";
     }
 
     @GetMapping("/board")
     public String Board() {
-        return "/WEB-INF/views/board.jsp";
+        return "/WEB-INF/views/Page/board.jsp";
     }
 
     @GetMapping("/member_list")
     public String Member() {
-        return "/WEB-INF/views/member_list.jsp";
+        return "/WEB-INF/views/Page/member_list.jsp";
     }
 
     @GetMapping("/about")
     public String About() {
-        return "/WEB-INF/views/about.jsp";
+        return "/WEB-INF/views/Page/about.jsp";
     }
 
 }
