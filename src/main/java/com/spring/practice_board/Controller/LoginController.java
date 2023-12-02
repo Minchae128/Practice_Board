@@ -10,11 +10,11 @@ public class LoginController {
 
     @GetMapping("/login")
     public String Login() {
-        return "/WEB-INF/views/login-join/login.jsp";
+        return "/login-join/login";
     }
 
     @GetMapping("/member_join")
     public String Memeber_join() {
-        return "/WEB-INF/views/login-join/member_join.jsp";
+        return "/login-join/member_join";
     }
 }
