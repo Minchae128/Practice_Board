@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -30,18 +31,17 @@ public class MainController {
     @GetMapping("/board")
     @ResponseBody
     public String Board() {
-
         List<Map<String, String>> list = new ArrayList<>();
         list = boardService.boardList();
 
-        for(Map<String, String> map : list) {
-            System.out.println(map.get("PostNumber"));
-            System.out.println(map.get("Title"));
-            System.out.println(map.get("Author"));
-            System.out.println(map.get("CreationDate"));
+        for (Map<String, String> map : list) {
+            System.out.println(map.get("POSTNUMBER"));
+            System.out.println(map.get("TITLE"));
+            System.out.println(map.get("AUTHOR"));
+            System.out.println(map.get("CREATIONDATE"));
         }
 
-            return "--";
+        return "--";
     }
 
     @GetMapping("/member_list")
