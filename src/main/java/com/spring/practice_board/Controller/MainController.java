@@ -3,6 +3,7 @@ package com.spring.practice_board.Controller;
 import com.spring.practice_board.Service.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -29,8 +30,7 @@ public class MainController {
     }
 
     @GetMapping("/board")
-    @ResponseBody
-    public String Board() {
+    public String Board(HttpServletRequest request, Model model) {
         List<Map<String, String>> list = new ArrayList<>();
         list = boardService.boardList();
 
@@ -41,7 +41,9 @@ public class MainController {
             System.out.println(map.get("CREATIONDATE"));
         }
 
-        return "--";
+        //request.setAttribute("list", list);
+        model.addAttribute("list", list);
+        return "/Page/board";
     }
 
     @GetMapping("/member_list")
