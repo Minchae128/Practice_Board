@@ -1,12 +1,10 @@
-<%--<%@ page import="java.util.Map" %>
-<%@ page import="java.util.List" %>--%>
+<%@ page import="java.util.Map" %>
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<%--
 <%
     List<Map<String, String>> list = (List<Map<String, String>>) request.getAttribute("list");
 %>
---%>
 
 <html>
 <head>
@@ -93,24 +91,23 @@
         </div>
 
     </div>
-<%--    <% for(Map<String, String> map : list){ %>
+    <% for(Map<String, String> map : list){ %>
     <div class="row justify-content-center">
 
         <div class="col-1">
-            <%= map.get("POSTNUMBER")%>%>
+            <%= map.get("POSTNUMBER")%>
         </div>
         <div class="col-5">
-            <%= map.get("TITLE")%>%>
+            <%= map.get("TITLE")%>
         </div>
         <div class="col-2">
-            <%= map.get("AUTHOR")%>%>
+            <%= map.get("AUTHOR")%>
         </div>
         <div class="col-2">
-            <%= map.get("CREATIONDATE")%>%>
+            <%= map.get("CREATIONDATE")%>
         </div>
-
     </div>
-    <% } %>--%>
+    <% } %>
 
     <hr width="100%" color="black" noshade/>
 
