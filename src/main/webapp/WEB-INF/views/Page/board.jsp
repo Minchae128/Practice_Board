@@ -82,12 +82,6 @@
         <div class="col-2">
             작성일
         </div>
-        <div class="col-1">
-            조회수
-        </div>
-        <div class="col-1">
-            댓글수
-        </div>
 
     </div>
 
