@@ -1,9 +1,13 @@
 <%@ page import="java.util.Map" %>
 <%@ page import="java.util.List" %>
+<%@ page import="com.spring.practice_board.VO.VO_board" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
-    List<Map<String, String>> list = (List<Map<String, String>>) request.getAttribute("list");
+    /*List<Map<String, String>> list = (List<Map<String, String>>) request.getAttribute("list");*/
+
+    List<VO_board> list = (List<VO_board>) request.getAttribute("list");
+
 %>
 
 <html>
@@ -91,7 +95,7 @@
         </div>
 
     </div>
-    <% for(Map<String, String> map : list){ %>
+<%--    <% for(Map<String, String> map : list){ %>
     <div class="row justify-content-center">
 
         <div class="col-1">
@@ -105,6 +109,24 @@
         </div>
         <div class="col-2">
             <%= map.get("CREATIONDATE")%>
+        </div>
+    </div>
+    <% } %>--%>
+
+    <% for (VO_board vo_board : list) { %>
+    <div class="row justify-content-center">
+
+        <div class="col-1">
+            <%= vo_board.getPOSTNUMBER() %>
+        </div>
+        <div class="col-5">
+            <%= vo_board.getTITLE() %>
+        </div>
+        <div class="col-2">
+            <%= vo_board.getAUTHOR()%>
+        </div>
+        <div class="col-2">
+            <%= vo_board.getCREATIONDATE()%>
         </div>
     </div>
     <% } %>
