@@ -211,3 +211,37 @@ openFile
   CDN(Content Delivery Network) : 정적 리소스를 빠르게 제공할 수 있게 전세계의 캐시서버에 복제해주는 서비스.  
 ```
 </details>
+
+<br>
+
+<details>
+<summary>[참고] 관련 자료</summary>
+
+- [Spring Boot + Mybatis + Jsp 간단예제 만들기] IT 늦공 김부장<br>
+https://www.youtube.com/playlist?list=PL3036mp45iYyP_Dqz7cHuDN6DQcUiKdlM
+
+<br>
+
+  1. Tool Story (외장,내장 WAS)
+     1. Apache Tomcat
+     2. STS Tool
+     3. Spring boot
+  2. Project 만들기 
+     1. IntellJ
+     2. Packaging Jar, War
+     3. Maven, Gradle
+     4. Dependency(의존성) 추가
+  3. Html 틀 작성
+  4. Controller - View 만들기 (RequestMapping + GetMapping + PostMapping)
+     1. MVC
+     2. DAO, DTO, VO, Controller
+     3. Request 흐름
+     4. RequestMapping & GetMapping & PostMapping 구분
+     5. Forward, SendRedirect
+  5. Header + footer 공통부분 적용 (spring.mvc.prefix + suffix)
+  6. Oracle Connection 환경 설정 (Dependency, application 설정, DB 구조)
+     1. Oracle 연동 및 테이블 생성
+  7. Mybatis + Service - DAO - Mapper (Mybatis 프레임워크를 통해 DB(오라클)연동을 구현)
+  8. Controller에 객체를 담아서 View에 전달 (request + model 사용)
+  9. VO 객체 사용하기 (데이터 전달을 위해 VO 객체 사용)
+</details>
