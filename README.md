@@ -244,4 +244,6 @@ https://www.youtube.com/playlist?list=PL3036mp45iYyP_Dqz7cHuDN6DQcUiKdlM
   7. Mybatis + Service - DAO - Mapper (Mybatis 프레임워크를 통해 DB(오라클)연동을 구현)
   8. Controller에 객체를 담아서 View에 전달 (request + model 사용)
   9. VO 객체 사용하기 (데이터 전달을 위해 VO 객체 사용)
+  10. Lombok 적용
+      1. https://projectlombok.org/
 </details>
