@@ -2,6 +2,7 @@ package com.spring.practice_board.Controller;
 
 import com.spring.practice_board.Service.BoardService;
 import com.spring.practice_board.VO.VO_board;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,6 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
+@Slf4j
 public class MainController {
 
     @Autowired
@@ -50,13 +52,18 @@ public class MainController {
         list = boardService.boardList();
 
         //VO객체 사용 명시
-        System.out.println("vo_board");
+        //System.out.println("vo_board");
+        log.info("vo_board");
 
         for (VO_board vo_board : list) {
-            System.out.println(vo_board.getPOSTNUMBER());
+/*            System.out.println(vo_board.getPOSTNUMBER());
             System.out.println(vo_board.getTITLE());
             System.out.println(vo_board.getAUTHOR());
-            System.out.println(vo_board.getCREATIONDATE());
+            System.out.println(vo_board.getCREATIONDATE());*/
+            log.info(vo_board.getPOSTNUMBER());
+            log.info(vo_board.getTITLE());
+            log.info(vo_board.getAUTHOR());
+            log.info(vo_board.getCREATIONDATE());
         }
 
         request.setAttribute("list", list);
